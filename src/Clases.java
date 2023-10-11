@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Clases {
 
+    int variable = 0; // Variable a nivel global
+
     public void primera_clase_variable_toma_datos(){
 
         //Definicion de variables
@@ -33,8 +35,45 @@ public class Clases {
 
     public void segunda_clase_condicionales(){
 
+        variable = 2;
+        int numero1 = 10;
+        int numero2 = 6;
+
+        // Operadores Logicos
+        // Tipos :
+        // >  mayor que
+        // <  menor que
+        // =  igual
+        // <=  menor o igual que
+        // >=  mayor o igual que
+        // &&  y
+        // ||  o
+
+
+        //Condicionales    los condicionales siempre nos dan una respuesta o negativa o positiva
+
+        if (numero1 > 10  && numero2 < 4) { // Condicional con dos preguntas y las dos deben ser verdaderas
+
+        }
+
+        if (numero1 > 10  || numero2 < 4){ // Condicional donde uan de las 2 preguntas debe ser correcta para ingresar
+
+        }
+
+        if (  (numero1 > 10  || numero2 < 4)   ||   (numero2 == 20 || numero1<=1 ) ){  // Agrupaciones de condicionales
+
+        }
+
+        if (numero1 > 10  || numero2 < 4){  // Condicional con doble accion (Una accion para true y otra para false)
+
+        }else{
+
+        }
+
+
 
     }
+
 
 
 }
