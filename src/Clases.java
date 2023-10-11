@@ -22,12 +22,11 @@ public class Clases {
         // Toma de datos por consola
         double numero1 = 12;
         double numero2 = 23;
-        double resul = numero1 * numero2;
 
-        Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in); //Objeto para tomar los datos
 
         System.out.println("Ingrese el primer numero ");
-        numero1 = teclado.nextDouble();
+        numero1 = teclado.nextDouble();                  // Guardamos el dato tomado de consola en la variable
         System.out.println("El Primer numero es: " + numero1);
 
     }
