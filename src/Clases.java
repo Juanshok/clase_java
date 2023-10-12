@@ -2,7 +2,13 @@ import java.util.Scanner;
 
 public class Clases {
 
-    int variable = 0; // Variable a nivel global
+    int numero1 = 10; // Variable a nivel global
+    int numero2 = 20; // Variable a nivel global
+    int numero3 = 10;
+
+    String nombre = "Pepito";
+
+    Scanner teclado = new Scanner(System.in); //Objeto para tomar los datos
 
     public void primera_clase_variable_toma_datos(){
 
@@ -25,7 +31,6 @@ public class Clases {
         double numero1 = 12;
         double numero2 = 23;
 
-        Scanner teclado = new Scanner(System.in); //Objeto para tomar los datos
 
         System.out.println("Ingrese el primer numero ");
         numero1 = teclado.nextDouble();                  // Guardamos el dato tomado de consola en la variable
@@ -34,10 +39,6 @@ public class Clases {
     }
 
     public void segunda_clase_condicionales(){
-
-        variable = 2;
-        int numero1 = 10;
-        int numero2 = 6;
 
         // Operadores Logicos
         // Tipos :
@@ -74,6 +75,97 @@ public class Clases {
 
     }
 
+    public void tercera_clase_condicionales_anidados(){
+
+        // If anidados
+        System.out.println("Ingrese el primer valor");
+        numero1 = teclado.nextInt();
+
+        System.out.println("Ingrese el segundo valor");
+        numero2 = teclado.nextInt();
+
+        if (numero1 > numero2){
+            System.out.println("El primer valor es mayor que el segundo");
+
+            if (numero3 < 20){
+                System.out.println("El numero 3 es menor que 20");
+
+                if (numero1 == 10){
+                    System.out.println("El primer valor es igual a 10");
+
+                }else {
+                    System.out.println("El primer valor es diferente de 10");
+                }
+            }
+
+        }else {
+            /*if (){
+
+            }
+             */
+            System.out.println("El segundo valor es mayor que el primero");
+        }
+
+
+
+
+
+
+
+
+    }
+
+    public void tercera_clase_condicionales_swtich(){
+
+        // Swtich case
+        switch (numero1){  //Variable numerica
+
+            case 10:
+                System.out.println("El numero 1 es igual a 10");
+                break; //Siempre ponerlo
+
+            case 2:
+                System.out.println("El numero 1 es igual a 2");
+                break;
+
+            case 3:
+                System.out.println("El numero 1 es igual a 3");
+                break;
+
+            case 4:
+                System.out.println("El numero 1 es igual a 4");
+                break;
+            default:
+
+        }
+
+        switch (nombre){  //Variable de texto
+            case "Andres":
+                System.out.println("El numero 1 es igual a 10");
+                break;
+
+            case "Juanito":
+                System.out.println("El numero 1 es igual a 2");
+                break;
+
+            case "Lili":
+                System.out.println("El numero 1 es igual a 3");
+                break;
+
+            case "Yeimy":
+                System.out.println("El numero 1 es igual a 4");
+                break;
+
+            default:
+                System.out.println("No es ninguno de los nombres");
+
+        }
+
+
+
+
+
+    }
 
 
 }
