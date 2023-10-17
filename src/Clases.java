@@ -167,5 +167,98 @@ public class Clases {
 
     }
 
+    public void ejercicios_condicionales_anidados(){
 
+        int numHoras = 0;
+        int salarioTotal;
+        int extras = 0;
+
+        System.out.println("Ingrese el numero de horas trabajadas");
+        numHoras = teclado.nextInt();
+
+        /*
+        if (numHoras>0){
+
+            if (numHoras <= 40){
+                salarioTotal = numHoras * 16;
+                System.out.println("El salario total del trabajador es: " + salarioTotal);
+            }else {
+                extras = numHoras - 40;
+                salarioTotal = (40 * 16) + (extras * 20);
+                System.out.println("El salario total del trabajador es: " + salarioTotal);
+            }
+
+        }else {
+            System.out.println("No puede ingresar numeros negativos");
+        }
+         */
+
+        switch (numHoras){
+
+            case 10:
+                System.out.println("El trabajador trabajo un tercio de la jornada");
+                break;
+
+            case 20:
+                System.out.println("El trabajador trabajo dos tercios de la jornada");
+                break;
+
+            case 30:
+                System.out.println("El trabajador trabajo la jornada completa");
+                break;
+
+            default:
+                System.out.println("El numero de horas ingresadas no corresponde a ninguna respuesta");
+        }
+
+
+    }
+
+    public void vectores_matrices() {
+
+        // ******************* VECTORES ****************
+        System.out.println("******************* VECTORES ****************");
+        String nombres[] = new String[10]; // Inicializar un vector, el 10 inidica el tamaño
+        int precios[] = new int[10]; // Inicializar un vector, el 10 inidica el tamaño
+
+        nombres[0] = "Shampoo"; // Guarda data en la posicion indicada
+        nombres[1] = "Arena"; // Guarda data en la posicion indicada
+
+        precios[0] = 1000; // Guarda data en la posicion indicada
+        precios[1] = 2000; // Guarda data en la posicion indicada
+
+        int suma = precios[0] + precios[1]; // Suma de los valores que guardamos
+        System.out.println("La suma es: " + suma); // impresion Suma de los valores que guardamos
+        System.out.println("la resta es: " + (precios[0] - precios[1])); // impresion resta de los valores que guardamos
+
+
+        System.out.println(precios[5]); // Imprimirá un null ya que no hay datos guardados en esa posicion
+        System.out.println(nombres[5]); // Imprimirá un null ya que no hay datos guardados en esa posicion
+
+        System.out.println("El tamaño del vector es: " + precios.length);
+
+        // ****************** MATRICES ****************
+        System.out.println("******************* MATRICES ****************");
+        String nombres_matriz[][] = new String[5][10]; // Inicializar una matriz
+        int precios_matriz[][] = new int[5][10]; // Inicializar una matriz
+
+
+        nombres_matriz[1][1] = "Shampoo";
+        nombres_matriz[2][3] = "arena";
+
+        precios_matriz[1][1] = 1000;
+        precios_matriz[2][3] = 2000;
+
+        int suma_matrices = precios_matriz[1][1] + precios_matriz[2][3]; // Suma de los valores que guardamos
+        System.out.println("La suma es: " + suma_matrices);
+        System.out.println("La resta es: " + (precios_matriz[1][1] - precios_matriz[2][3]));
+
+        System.out.println(precios_matriz[4][4]); // Imprimirá un null ya que no hay datos guardados en esa posicion
+        System.out.println(nombres_matriz[4][4]); // Imprimirá un null ya que no hay datos guardados en esa posicion
+
+        System.out.println("El tamaño de la matriz es: " + precios_matriz.length);
+
+
+
+    }
 }
