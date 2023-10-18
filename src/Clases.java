@@ -10,7 +10,7 @@ public class Clases {
 
     Scanner teclado = new Scanner(System.in); //Objeto para tomar los datos
 
-    public void primera_clase_variable_toma_datos(){
+    public void primera_clase_variable_toma_datos() {
 
         //Definicion de variables
         String nombre = "Juan";
@@ -38,7 +38,7 @@ public class Clases {
 
     }
 
-    public void segunda_clase_condicionales(){
+    public void segunda_clase_condicionales() {
 
         // Operadores Logicos
         // Tipos :
@@ -53,29 +53,28 @@ public class Clases {
 
         //Condicionales    los condicionales siempre nos dan una respuesta o negativa o positiva
 
-        if (numero1 > 10  && numero2 < 4) { // Condicional con dos preguntas y las dos deben ser verdaderas
+        if (numero1 > 10 && numero2 < 4) { // Condicional con dos preguntas y las dos deben ser verdaderas
 
         }
 
-        if (numero1 > 10  || numero2 < 4){ // Condicional donde uan de las 2 preguntas debe ser correcta para ingresar
+        if (numero1 > 10 || numero2 < 4) { // Condicional donde uan de las 2 preguntas debe ser correcta para ingresar
 
         }
 
-        if (  (numero1 > 10  || numero2 < 4)   ||   (numero2 == 20 || numero1<=1 ) ){  // Agrupaciones de condicionales
+        if ((numero1 > 10 || numero2 < 4) || (numero2 == 20 || numero1 <= 1)) {  // Agrupaciones de condicionales
 
         }
 
-        if (numero1 > 10  || numero2 < 4){  // Condicional con doble accion (Una accion para true y otra para false)
+        if (numero1 > 10 || numero2 < 4) {  // Condicional con doble accion (Una accion para true y otra para false)
 
-        }else{
+        } else {
 
         }
-
 
 
     }
 
-    public void tercera_clase_condicionales_anidados(){
+    public void tercera_clase_condicionales_anidados() {
 
         // If anidados
         System.out.println("Ingrese el primer valor");
@@ -84,21 +83,21 @@ public class Clases {
         System.out.println("Ingrese el segundo valor");
         numero2 = teclado.nextInt();
 
-        if (numero1 > numero2){
+        if (numero1 > numero2) {
             System.out.println("El primer valor es mayor que el segundo");
 
-            if (numero3 < 20){
+            if (numero3 < 20) {
                 System.out.println("El numero 3 es menor que 20");
 
-                if (numero1 == 10){
+                if (numero1 == 10) {
                     System.out.println("El primer valor es igual a 10");
 
-                }else {
+                } else {
                     System.out.println("El primer valor es diferente de 10");
                 }
             }
 
-        }else {
+        } else {
             /*if (){
 
             }
@@ -107,18 +106,12 @@ public class Clases {
         }
 
 
-
-
-
-
-
-
     }
 
-    public void tercera_clase_condicionales_swtich(){
+    public void tercera_clase_condicionales_swtich() {
 
         // Swtich case
-        switch (numero1){  //Variable numerica
+        switch (numero1) {  //Variable numerica
 
             case 10:
                 System.out.println("El numero 1 es igual a 10");
@@ -139,7 +132,7 @@ public class Clases {
 
         }
 
-        switch (nombre){  //Variable de texto
+        switch (nombre) {  //Variable de texto
             case "Andres":
                 System.out.println("El numero 1 es igual a 10");
                 break;
@@ -162,12 +155,9 @@ public class Clases {
         }
 
 
-
-
-
     }
 
-    public void ejercicios_condicionales_anidados(){
+    public void ejercicios_condicionales_anidados() {
 
         int numHoras = 0;
         int salarioTotal;
@@ -193,7 +183,7 @@ public class Clases {
         }
          */
 
-        switch (numHoras){
+        switch (numHoras) {
 
             case 10:
                 System.out.println("El trabajador trabajo un tercio de la jornada");
@@ -261,6 +251,64 @@ public class Clases {
         //COmentariooo
 
 
+    }
+
+    public void ejercicio_notas_vectores() {
+
+        Scanner teclado = new Scanner(System.in);
+        double[] notas = new double[5];
+        double media;
+
+        System.out.println("Ingrese la primera nota");
+        notas[0] = teclado.nextDouble();
+        System.out.println("Ingrese la segunda nota");
+        notas[1] = teclado.nextDouble();
+        System.out.println("Ingrese la tercera nota");
+        notas[2] = teclado.nextDouble();
+        System.out.println("Ingrese la cuarta nota");
+        notas[3] = teclado.nextDouble();
+        System.out.println("Ingrese la quinta nota");
+        notas[4] = teclado.nextDouble();
+
+
+        if (notas[0] >= 0 && notas[1] >= 0 && notas[2] >= 0 && notas[3] >= 0 && notas[4] >= 0) {
+
+            if (notas[0] <= 10 && notas[1] <= 10 && notas[2] <= 10 && notas[3] <= 10 && notas[4] <= 10) {
+
+                System.out.println("Las notas son \n" + notas[0] + "\n" + notas[1]);
+                System.out.println(notas[0]);
+                System.out.println(notas[1]);
+                System.out.println(notas[2]);
+                System.out.println(notas[3]);
+                System.out.println(notas[4]);
+
+                media = (notas[0] + notas[1] + notas[2] + notas[3] + notas[4]) / notas.length;
+                System.out.println("la nota media es: " + media);
+
+            }
+
+        } else {
+            System.out.println("No se pueden agregar numeros menores a 0 ");
+        }
+
 
     }
+
+    public void quinta_clase(int numero_1, int numero_2){
+
+        int resultado;
+
+        resultado = numero_1 + numero_2;
+        System.out.println(resultado);
+        resultado = numero_1 - numero_2;
+        System.out.println(resultado);
+        resultado = numero_1 * numero_2;
+        System.out.println(resultado);
+        resultado = numero_1 / numero_2;
+        System.out.println(resultado);
+
+
+    }
+
+
 }
