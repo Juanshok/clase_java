@@ -310,5 +310,13 @@ public class Clases {
 
     }
 
+    public int suma(int numero_1, int numero_2){
+        int resultado = numero_1 + numero_2;
+        return resultado;
+    }
 
+    public int multiplicacion(int numero_1, int numero_2){
+        int resultado = numero_1 * numero_2;
+        return resultado;
+    }
 }
